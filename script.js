@@ -17,14 +17,14 @@ function trocarPaginas(){
     }
 
     // Usuario Estoquista
-    else if (usuario === "2" && senha === "123") {
+    else if (usuario === "2" && login === "natai" && senha === "123") {
         alert("Você sera direcionado para a pagina de Estoque.")
         window.location.href = "estoque.html";
     }
 
     //  Usuario Administrador 
 
-    else if (usuario === "3" && senha === "123") {
+    else if (usuario === "3" && login === "natai" && senha === "123") {
         alert("Você sera direcionado para a pagina de Administração")
         window.location.href = "administrador.html";
     }
