@@ -1,1 +1,37 @@
-<h1>Estoque</h1>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="pagina">
+    <h1>Controle de Estoque</h1>
+
+    <input type="text" id="nomeProduto" placeholder="Nome do produto">
+    <input type="number" id="qtdProduto" placeholder="Quantidade">
+    <input type="number" id="precoProduto" placeholder="Preço">
+
+    <button onclick="adicionarProduto()">Adicionar ao Estoque</button>
+
+    <h2>Produtos em Estoque</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+        <tbody id="listaEstoque"></tbody>
+    </table>
+
+    <button onclick="voltar()">Voltar</button>
+</div>
+
+<script src="./scriptsJS/estoque.js"></script>
+</body>
+</html>

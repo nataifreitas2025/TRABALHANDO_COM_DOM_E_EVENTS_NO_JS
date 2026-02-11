@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Área de Vendas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Vendas</h1>
+
+<div class="pagina">
+    <h1>Área de Vendas</h1>
+
+    <input type="text" id="produtoVenda" placeholder="Produto vendido">
+    <input type="number" id="qtdVenda" placeholder="Quantidade">
+
+    <button onclick="registrarVenda()">Registrar Venda</button>
+
+    <h2>Vendas Realizadas</h2>
+
+    <ul id="listaVendas"></ul>
+
+    <button onclick="voltar()">Voltar</button>
+</div>
+
+<script src="./scriptsJS/vendas.js"></script>
 </body>
-<script src="script.js"></script>
 </html>

@@ -1,6 +1,6 @@
 function trocarPaginas(){
 
-    let usuario = document.getElementById("inpusuario").value;
+    let usuario = document.getElementById("inpUsuario").value;
     let senha = document.getElementById("inpsenha").value;  
     let login = document.getElementById("inplogin").value;
     let mensagem = document.getElementById("pMensagem");
@@ -13,7 +13,7 @@ function trocarPaginas(){
     // Usuário Vendedor 
     else if (usuario === "1" && login === "natai" && senha === "123") {
         alert("Você sera direcionado para a pagina de Vendas.")
-        window.location.href = "vendas.hmtl";
+        window.location.href = "vendas.html";
     }
 
     // Usuario Estoquista
@@ -35,39 +35,45 @@ function trocarPaginas(){
      }
 
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function teclaEnter(event) {
+    if (event.key === "Enter") {
+        trocarPaginas();
+    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
